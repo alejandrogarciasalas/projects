@@ -2,8 +2,7 @@
 title: Alejandro's Projects
 email: garciasalasalejandro@gmail.com
 description: These are some of Alejandro García Salas' Projects
-# baseurl: "/projects" # the subpath of your site, e.g. /blog/
-baseurl:     ""
+baseurl: "/projects" # the subpath of your site, e.g. /blog/
 url: "alejandro.pe" # the base hostname & protocol for your site
 twitter_username: findAlejandro
 github_username:  alejandrogarciasalas

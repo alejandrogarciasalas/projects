@@ -1,0 +1,70 @@
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- SEO--> 
+  <meta name="author" content="Alejandro García Salas">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="Alejandro, Garcia, Salas, technology, design, entrepreneurship, portfolio"> 
+
+  <!-- Open Graph--> 
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="http://alejandrogarciasalas.me">
+  <meta property="og:image" content="https://dl.dropboxusercontent.com/u/30763013/blog/images/avatar-personal-site.jpg">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:site_name" content="Alejandro García Salas">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary">   
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:url" content="http://alejandrogarciasalas.me">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:site" content="http://alejandrogarciasalas.me">
+  <meta name="twitter:creator" content="Alejandro García Salas">
+  <meta name="msapplication-TileColor" content="#3d464d">
+  <meta name="msapplication-TileImage" content="https://dl.dropboxusercontent.com/u/30763013/blog/images/avatar-personal-site.jpg">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Theme Color Android Google Chrome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="theme-color" content="#3d464d">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/30763013/blog/images/favicon.png" sizes="32x32">
+        
+    {% if site.google_analytics %}
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71239123-3', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+    {% endif %}
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+
+	<script src="{{ "/assets/js/modernizr.custom.js" | prepend: site.baseurl }}"></script>
+</head>

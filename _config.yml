@@ -1,0 +1,17 @@
+# Site settings
+title: Alejandro's Projects
+email: garciasalasalejandro@gmail.com
+description: These are some of Alejandro García Salas' Projects
+# baseurl: "/projects" # the subpath of your site, e.g. /blog/
+baseurl:     ""
+url: "alejandro.pe" # the base hostname & protocol for your site
+twitter_username: findAlejandro
+github_username:  alejandrogarciasalas
+
+# Google analytics
+google_analytics: True
+
+# Build settings
+markdown: kramdown
+sass:
+  compressed: true
